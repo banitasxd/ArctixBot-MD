@@ -1,5 +1,5 @@
 let handler = (t) => {
-    t.reply('*https://github.com/Sibuuu07/ArctixBot-MD*')
+    t.reply('*إسأل المطور🙂*')
 }
 
 handler.command = ['sc']
