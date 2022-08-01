@@ -45,7 +45,7 @@ const defaultMenu = {
   body: '┃ ⚜️ %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `
-𝐀𝐑𝐂𝐓𝐈𝐗 𝐁𝐎𝐓 𝐈𝐍𝐂 |©𝐒𝐢𝐛𝐬𝐬𝐬𝐬𝐬𝐬𝐬𝐬
+𝐀𝐑𝐂𝐓𝐈𝐗 𝐁𝐎𝐓 𝐈𝐍𝐂 |©vanitas
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      timeZone: 'Asia/Kolkata'
+      timeZone: 'africa/Morocco'
     })
     let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
       day: 'numeric',
@@ -147,7 +147,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './media/arctix.jpg')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://www.instagram.com/sibssssssss', 'INSTAGRAM', owner[0][0], 'OWNER', [
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://www.instagram.com/mohammed_xf16', 'INSTAGRAM', owner[0][0], 'OWNER', [
       ['BOTGROUP', '/donasi'],
       ['SPEED', '/ping'],
       ['OWNER', '/owner']
