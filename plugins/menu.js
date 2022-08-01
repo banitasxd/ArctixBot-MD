@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
-      timeZone: 'Africa/maroc'
+      timeZone: 'Asia/Kolkata'
     })
     let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
       day: 'numeric',
@@ -77,7 +77,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       hour: 'numeric',
       minute: 'numeric',
       second: 'numeric',
-      timeZone: 'Africa/maroc'
+      timeZone: 'Asia/Kolkata'
     })
     let _uptime = process.uptime() * 1000
     let _muptime
